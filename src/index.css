@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  color: #fff;
+  background-color: #020617;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.14), transparent 40%),
+    radial-gradient(circle at 10% 20%, rgba(147, 51, 234, 0.12), transparent 25%),
+    #020617;
+  color: #fff;
+}
