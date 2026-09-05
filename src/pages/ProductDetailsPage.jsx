@@ -4,7 +4,7 @@ import { ArrowLeft } from 'lucide-react'
 import ProductCard from '../components/ProductCard'
 import RatingStars from '../components/RatingStars'
 import { products } from '../data/products'
-import { useCart } from '../context/CartContext'
+import { useCart } from '../context/useCart'
 
 export default function ProductDetailsPage() {
   const { id } = useParams()

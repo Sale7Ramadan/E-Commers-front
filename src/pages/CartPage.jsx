@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { Minus, Plus, Trash2 } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { useCart } from '../context/CartContext'
+import { useCart } from '../context/useCart'
 
 export default function CartPage() {
   const { items, totals, increment, decrement, removeFromCart } = useCart()

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { ShoppingCart } from 'lucide-react'
 import RatingStars from './RatingStars'
-import { useCart } from '../context/CartContext'
+import { useCart } from '../context/useCart'
 
 export default function ProductCard({ product }) {
   const { addToCart } = useCart()
