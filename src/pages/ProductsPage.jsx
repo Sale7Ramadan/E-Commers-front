@@ -5,13 +5,13 @@ import SectionTitle from '../components/SectionTitle'
 import { products } from '../data/products'
 
 export default function ProductsPage() {
-  const [category, setCategory] = useState('All')
+  const [category, setCategory] = useState('الكل')
   const [loading, setLoading] = useState(true)
 
-  const categories = useMemo(() => ['All', ...new Set(products.map((product) => product.category))], [])
+  const categories = useMemo(() => ['الكل', ...new Set(products.map((product) => product.category))], [])
 
   const filteredProducts = useMemo(
-    () => (category === 'All' ? products : products.filter((product) => product.category === category)),
+    () => (category === 'الكل' ? products : products.filter((product) => product.category === category)),
     [category],
   )
 
@@ -23,9 +23,9 @@ export default function ProductsPage() {
   return (
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="mx-auto max-w-7xl px-4 py-14 md:px-8">
       <SectionTitle
-        eyebrow="Demo Catalog"
-        title="Products"
-        subtitle="Discover premium demo products for laptops, PCs, components, and accessories."
+        eyebrow="كتالوج المنتجات"
+        title="المنتجات"
+        subtitle="استكشف مجموعة فاخرة من الأجهزة واللابتوبات والمكوّنات والملحقات المتقدمة."
       />
       <div className="mt-7 flex flex-wrap gap-2">
         {categories.map((item) => (
