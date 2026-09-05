@@ -6,6 +6,7 @@ import { useCart } from '../context/useCart'
 
 export default function ProductCard({ product }) {
   const { addToCart } = useCart()
+  const price = new Intl.NumberFormat('ar-SA').format(product.price)
 
   return (
     <motion.article
@@ -22,20 +23,20 @@ export default function ProductCard({ product }) {
         />
       </Link>
       <div className="space-y-4 p-5">
-        <p className="text-xs uppercase tracking-[0.24em] text-cyan-300">{product.category}</p>
+        <p className="text-xs tracking-[0.12em] text-cyan-300">{product.category}</p>
         <Link to={`/products/${product.id}`} className="block text-xl font-semibold leading-tight text-white transition hover:text-blue-300">
           {product.name}
         </Link>
         <p className="line-clamp-2 text-sm text-slate-300">{product.shortDescription}</p>
         <RatingStars rating={product.rating} />
         <div className="flex items-center justify-between border-t border-white/10 pt-4">
-          <p className="text-2xl font-semibold text-white">${product.price}</p>
+          <p className="text-2xl font-semibold text-white">{price} ر.س</p>
           <button
             type="button"
             onClick={() => addToCart(product)}
             className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 px-4 py-2 text-sm font-semibold text-white transition hover:brightness-110"
           >
-            <ShoppingCart size={16} /> Add to cart
+            <ShoppingCart size={16} /> أضف إلى السلة
           </button>
         </div>
       </div>

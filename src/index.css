@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: 'Inter', 'SF Pro Display', 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Cairo', 'Tajawal', 'Segoe UI', system-ui, sans-serif;
   color: #fff;
   background-color: #020617;
 }
@@ -21,6 +21,7 @@ body,
 
 html {
   scroll-behavior: smooth;
+  direction: rtl;
 }
 
 body {
@@ -30,7 +31,8 @@ body {
     radial-gradient(circle at 70% 80%, rgba(6, 182, 212, 0.08), transparent 35%),
     #020617;
   color: #fff;
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
+  line-height: 1.75;
 }
 
 ::selection {

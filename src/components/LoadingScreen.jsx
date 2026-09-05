@@ -10,7 +10,7 @@ export default function LoadingScreen() {
         className="text-center"
       >
         <div className="mx-auto mb-4 h-16 w-16 animate-spin rounded-full border-4 border-blue-500/20 border-t-blue-500" />
-        <p className="text-sm uppercase tracking-[0.35em] text-slate-300">Loading TechNova</p>
+        <p className="text-sm tracking-[0.12em] text-slate-300">جارٍ تجهيز متجر تك نوفا</p>
       </motion.div>
     </div>
   )

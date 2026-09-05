@@ -5,11 +5,11 @@ import { useCart } from '../context/useCart'
 import { megaMenuCategories } from '../data/products'
 
 const links = [
-  { name: 'Home', to: '/' },
-  { name: 'Products', to: '/products' },
-  { name: 'Categories', to: '/#categories' },
-  { name: 'About', to: '/#about' },
-  { name: 'Contact', to: '/#contact' },
+  { name: 'الرئيسية', to: '/' },
+  { name: 'المنتجات', to: '/products' },
+  { name: 'الأقسام', to: '/#categories' },
+  { name: 'من نحن', to: '/#about' },
+  { name: 'تواصل معنا', to: '/#contact' },
 ]
 
 export default function Navbar() {
@@ -21,7 +21,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/75 backdrop-blur-2xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
         <Link to="/" className="text-2xl font-semibold tracking-tight text-white">
-          Tech<span className="text-blue-400">Nova</span>
+          تك <span className="text-blue-400">نوفا</span>
         </Link>
 
         <nav className="hidden items-center gap-7 md:flex">
@@ -40,7 +40,7 @@ export default function Navbar() {
             onMouseLeave={() => setMegaMenuOpen(false)}
           >
             <button type="button" className="inline-flex items-center gap-1 text-sm font-medium text-slate-300 transition hover:text-white">
-              Collections <ChevronDown size={15} />
+              الأقسام المتقدمة <ChevronDown size={15} />
             </button>
             <div
               className={`absolute right-0 top-full mt-5 w-[740px] rounded-3xl border border-white/15 bg-slate-900/85 p-6 shadow-[0_20px_80px_rgba(14,165,233,0.2)] backdrop-blur-2xl transition ${
@@ -48,9 +48,9 @@ export default function Navbar() {
               }`}
             >
               <div className="mb-5 flex items-center justify-between border-b border-white/10 pb-4">
-                <p className="text-xs uppercase tracking-[0.26em] text-blue-300">Mega Menu</p>
+                <p className="text-xs tracking-[0.12em] text-blue-300">القائمة الشاملة</p>
                 <span className="inline-flex items-center gap-1 rounded-full bg-blue-500/15 px-3 py-1 text-xs text-blue-200">
-                  <Sparkles size={13} /> Premium Picks
+                  <Sparkles size={13} /> اختيارات فاخرة
                 </span>
               </div>
               <div className="grid grid-cols-4 gap-5">
@@ -75,7 +75,7 @@ export default function Navbar() {
           <Link to="/cart" className="relative rounded-xl border border-white/10 bg-white/5 p-2 text-slate-200 hover:text-white">
             <ShoppingCart size={18} />
             {totals.quantity > 0 && (
-              <span className="absolute -right-2 -top-2 rounded-full bg-blue-500 px-1.5 text-xs font-semibold text-white">
+              <span className="absolute -left-2 -top-2 rounded-full bg-blue-500 px-1.5 text-xs font-semibold text-white">
                 {totals.quantity}
               </span>
             )}
@@ -84,7 +84,7 @@ export default function Navbar() {
             type="button"
             onClick={() => setOpen((value) => !value)}
             className="rounded-xl border border-white/10 p-2 text-slate-200 md:hidden"
-            aria-label="Toggle menu"
+            aria-label="فتح وإغلاق القائمة"
           >
             {open ? <X size={18} /> : <Menu size={18} />}
           </button>
