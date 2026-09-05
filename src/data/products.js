@@ -131,6 +131,25 @@ export const categoriesGrid = [
   'Networking',
 ]
 
+export const megaMenuCategories = [
+  {
+    title: 'Performance Systems',
+    items: ['Flagship Gaming PCs', 'Creator Workstations', 'Streaming Builds', 'Mini ITX Power Rigs'],
+  },
+  {
+    title: 'Portable Computing',
+    items: ['Ultra Gaming Laptops', 'Creator Laptops', 'Business Ultrabooks', '2-in-1 Performance'],
+  },
+  {
+    title: 'Elite Components',
+    items: ['RTX Graphics Cards', 'DDR5 Memory', 'Liquid Cooling', 'Power Supplies'],
+  },
+  {
+    title: 'Setup Essentials',
+    items: ['4K Monitors', 'Mechanical Keyboards', 'Wireless Mice', 'Premium Headsets'],
+  },
+]
+
 export const reviews = [
   {
     name: 'Mason Carter',
@@ -153,4 +172,40 @@ export const whyChooseUs = [
   { title: 'Curated Premium Gear', text: 'Top-tier demo inventory selected for gamers, creators, and professionals.' },
   { title: 'Future-Ready Technology', text: 'Showcasing high-performance products designed around modern workflows.' },
   { title: 'Client-Focused Experience', text: 'Refined visuals and smooth interactions built to impress stakeholders.' },
+]
+
+export const featuredDeals = [
+  {
+    title: 'Midnight Flash Bundle',
+    description: 'Get a high-refresh monitor + RGB keyboard combo with exclusive pricing.',
+    discount: 'Save 28%',
+    badge: '48h Deal',
+    image:
+      'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    title: 'Creator Power Setup',
+    description: 'Premium laptop and docking setup curated for editors and designers.',
+    discount: 'Save $420',
+    badge: 'Limited Drop',
+    image:
+      'https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    title: 'Esports Precision Pack',
+    description: 'Mouse, headset, and deskpad package built for tournament-level control.',
+    discount: 'Save 22%',
+    badge: 'Hot Pick',
+    image:
+      'https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=900&q=80',
+  },
+]
+
+export const trustedBrands = [
+  'NOVA X',
+  'HyperCore',
+  'VoltForge',
+  'ZenithWare',
+  'AeroPulse',
+  'QuantumLabs',
 ]
